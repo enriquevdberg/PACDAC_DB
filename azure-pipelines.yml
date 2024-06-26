@@ -28,17 +28,13 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: SqlAzureDacpacDeployment@1
+- task: SqlDacpacDeploymentOnMachineGroup@0
   inputs:
-    AuthenticationType: 'server'
-    azureSubscription: 'dacpac_test'
+    TaskType: 'dacpac'
+    TargetMethod: 'server'
     ServerName: 'localhost'
-    DatabaseName: 'PACDAC_TEST'
-    SqlUsername: 'FOURIER\VanderbergE'
-    deployType: 'DacpacTask'
-    DeploymentAction: 'Publish'
-    IpDetectionMethod: 'AutoDetect'
-    DacpacFile: '$(Build.SourcesDirectory)'
+    DatabaseName: 'DACPAC_TEST'
+    AuthScheme: 'windowsAuthentication'
 
 - task: VSTest@2
   inputs:
