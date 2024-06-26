@@ -8,6 +8,7 @@ trigger:
 
 pool:
   vmImage: 'windows-latest'
+  name: 'DESKTOP-AT5KR48'
 
 variables:
   solution: '**/*.sln'
