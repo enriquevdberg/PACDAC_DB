@@ -34,6 +34,8 @@ steps:
     TaskType: 'dacpac'
     TargetMethod: 'server'
     ServerName: 'DESKTOP-AT5KR48'
+    SqlUsername: 'FOURIER\VanderbergE'
+    SqlPassword: 'Qwerty12'
     DatabaseName: 'DACPAC_TEST'
     AuthScheme: 'windowsAuthentication'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
