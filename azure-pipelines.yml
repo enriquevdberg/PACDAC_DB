@@ -33,7 +33,7 @@ steps:
   inputs:
     TaskType: 'dacpac'
     TargetMethod: 'server'
-    ServerName: 'localhost'
+    ServerName: 'DESKTOP-AT5KR48'
     DatabaseName: 'DACPAC_TEST'
     AuthScheme: 'windowsAuthentication'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
