@@ -32,7 +32,7 @@ steps:
   inputs:
     AuthenticationType: 'server'
     azureSubscription: 'dacpac_test'
-    ServerName: 'localhost:1433'
+    ServerName: 'localhost'
     DatabaseName: 'PACDAC_TEST'
     SqlUsername: 'FOURIER\VanderbergE'
     deployType: 'DacpacTask'
