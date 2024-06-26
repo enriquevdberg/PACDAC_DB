@@ -36,7 +36,7 @@ steps:
     ServerName: 'localhost'
     DatabaseName: 'DACPAC_TEST'
     AuthScheme: 'windowsAuthentication'
-    DacpacFile: 'D:\a\1\s\bin\Release\Automate DACPAC Deployment.dacpac'
+    DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
 
 - task: VSTest@2
   inputs:
