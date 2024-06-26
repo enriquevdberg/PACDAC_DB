@@ -37,6 +37,7 @@ steps:
     DatabaseName: 'DACPAC_TEST'
     AuthScheme: 'windowsAuthentication'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
+    AdditionalArguments: '/p:AllowIncompatiblePlatform=true /p:Encrypt=false /p:TrustServerCertificate=true'
 
 - task: VSTest@2
   inputs:
