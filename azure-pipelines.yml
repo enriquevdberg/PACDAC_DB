@@ -31,6 +31,7 @@ steps:
 - task: SqlAzureDacpacDeployment@1
   inputs:
     AuthenticationType: 'server'
+    azureSubscription: 'dacpac_test'
     ServerName: 'localhost:1433'
     DatabaseName: 'PACDAC_TEST'
     SqlUsername: 'FOURIER\VanderbergE'
