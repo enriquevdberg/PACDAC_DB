@@ -1,0 +1,10 @@
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\bin\Debug\Automate DACPAC Deployment.dacpac
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\bin\Debug\Automate_DACPAC_Deployment.dll
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\bin\Debug\Automate_DACPAC_Deployment.pdb
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\obj\Debug\Automate DACPAC Deployment.sqlproj.AssemblyReference.cache
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\obj\Debug\Model.xml
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\obj\Debug\refactor.xml
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\obj\Debug\postdeploy.sql
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\obj\Debug\predeploy.sql
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\obj\Debug\Automate_DACPAC_Deployment.dll
+C:\Users\VanDerBergE\source\repos\Automate DACPAC Deployment\obj\Debug\Automate_DACPAC_Deployment.pdb
