@@ -39,8 +39,7 @@ steps:
     DatabaseName: 'DACPAC_TEST'
     AuthScheme: 'windowsAuthentication'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
-    ConnectionString: 'Server=localhost;Database=DACPAC_TEST;Integrated Security=True;TrustServerCertificate=true;Encrypt=true;'
-    AdditionalArguments: 'TargetEncryptConnection=True TargetTrustServerCertificate=True'
+    AdditionalArguments: '/TargetTrustServerCertificate=True'
     
 
 - task: VSTest@2
