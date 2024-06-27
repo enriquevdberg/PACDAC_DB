@@ -40,8 +40,7 @@ steps:
     DeploymentAction: 'Publish'
     IpDetectionMethod: 'AutoDetect'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
-    ConnectionString: 'Server=DESKTOP-AT5KR48.fourier.co.za, 1433;Database=PACDAC_TEST;Integrated Security=True;TrustServerCertificate=True;'
-    AdditionalArguments: 'TrustServerCertificate=True;'
+    AdditionalArguments: '/p:TargetTrustServerCertificate:True'
     
 
 - task: VSTest@2
