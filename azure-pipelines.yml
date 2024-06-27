@@ -34,13 +34,13 @@ steps:
     azureSubscription: 'dacpac_test'
     AuthenticationType: 'server'
     deployType: 'DacpacTask'
-    ServerName: 'DESKTOP-AT5KR48.fourier.co.za, 1433'
-    DatabaseName: 'PACDAC_TEST'
     SqlUsername: 'Enrique'
     SqlPassword: 'Qwerty12'
     DeploymentAction: 'Publish'
     IpDetectionMethod: 'AutoDetect'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
+    ConnectionString: 'Server=DESKTOP-AT5KR48.fourier.co.za, 1433;Database=PACDAC_TEST;Integrated Security=True;TrustServerCertificate=True;
+'
     
     
     
