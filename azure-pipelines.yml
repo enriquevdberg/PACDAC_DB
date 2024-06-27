@@ -33,14 +33,14 @@ steps:
     AuthenticationType: 'server'
     azureConnectionType: 'ConnectedServiceNameARM'
     azureSubscription: 'dacpac_test'
-    ServerName: 'DESKTOP-AT5KR48, 1433'
+    ServerName: 'DESKTOP-AT5KR48.fourier.co.za, 1433'
     DatabaseName: 'PACDAC_TEST'
     SqlUsername: 'FOURIER\VanderbergE'
     deployType: 'DacpacTask'
     DeploymentAction: 'Publish'
     IpDetectionMethod: 'AutoDetect'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
-    ConnectionString: 'Server=DESKTOP-AT5KR48;Database=PACDAC_TEST;Integrated Security=True;TrustServerCertificate=True;TargetTimeout=True;'
+    ConnectionString: 'Server=DESKTOP-AT5KR48.fourier.co.za, 1433;Database=PACDAC_TEST;Integrated Security=True;TrustServerCertificate=True;TargetTimeout=True;'
     
     
 
