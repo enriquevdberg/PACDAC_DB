@@ -30,7 +30,7 @@ steps:
 
 - task: SqlAzureDacpacDeployment@1
   inputs:
-    AuthenticationType: 'server'
+    AuthenticationType: 'aadAuthenticationPassword'
     azureConnectionType: 'ConnectedServiceNameARM'
     azureSubscription: 'dacpac_test'
     ServerName: 'DESKTOP-AT5KR48.fourier.co.za, 1433'
