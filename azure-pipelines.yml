@@ -41,7 +41,7 @@ steps:
     IpDetectionMethod: 'AutoDetect'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
     ConnectionString: 'Server=tcp:DESKTOP-AT5KR48.fourier.co.za, 1433; TrustServerCertificate=true; Encrypt=true;'
-    AdditionalArguments: '/p:TargetServerName=DESKTOP-AT5KR48.fourier.co.za'
+    AdditionalArguments: ' /TargetServerName:"DESKTOP-AT5KR48.fourier.co.za, 1433"'
     
 
 - task: VSTest@2
