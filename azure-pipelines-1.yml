@@ -11,7 +11,6 @@ pool:
 
 steps:
 - script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
@@ -20,3 +19,16 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '**\*.sln'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(agent.builddirectory)\s'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+  displayName: 'Run a one-line script'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'DatabaseProjectArtifact'
+    publishLocation: 'Container'
