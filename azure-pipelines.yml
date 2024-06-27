@@ -31,14 +31,16 @@ steps:
 - task: SqlAzureDacpacDeployment@1
   inputs:
     AuthenticationType: 'server'
+    azureConnectionType: 'ConnectedServiceNameARM'
     azureSubscription: 'dacpac_test'
-    ServerName: 'localhost'
+    ServerName: 'DESKTOP-AT5KR48.database.windows.net, 1433'
     DatabaseName: 'PACDAC_TEST'
     SqlUsername: 'FOURIER\VanderbergE'
     deployType: 'DacpacTask'
     DeploymentAction: 'Publish'
     IpDetectionMethod: 'AutoDetect'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
+    ConnectionString: 'Server=localhost;Database=PACDAC_TEST;Integrated Security=True;TrustServerCertificate=True;'
     
 
 - task: VSTest@2
