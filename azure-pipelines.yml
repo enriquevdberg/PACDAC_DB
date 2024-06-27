@@ -40,7 +40,8 @@ steps:
     DeploymentAction: 'Publish'
     IpDetectionMethod: 'AutoDetect'
     DacpacFile: '$(Build.SourcesDirectory)\bin\Release\Automate DACPAC Deployment.dacpac'
-    ConnectionString: 'Server=105.245.99.59;Database=PACDAC_TEST;Integrated Security=True;TrustServerCertificate=True;'
+    ConnectionString: 'Server=105.245.99.59;Database=PACDAC_TEST;Integrated Security=True;TrustServerCertificate=True;TargetTimeout=True;'
+    
     
 
 - task: VSTest@2
